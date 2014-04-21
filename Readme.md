@@ -10,4 +10,4 @@ also includes Mechanisms like
 
  Technologies used:
 
-javascript.js, Javascript module pattern,HTML5 Canvas, Saas,jquery,bootstrap.
+Javascript module pattern,HTML5 Canvas, Saas,jquery,bootstrap.
