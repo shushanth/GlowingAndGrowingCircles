@@ -1,0 +1,261 @@
+$fontFmaily:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma;
+$bgColor:rgba(7, 13, 53, 0.87);
+$nooutline:0 !important;
+$bottomBorder:1px dotted #ccc;
+$center:0 auto;
+$color-white:#ffffff;
+$border-bottom:1px dotted #242c2f;
+@mixin fontSize($value){font-size:$value;}
+@mixin border($value){border:$value;}
+@mixin position($value){position:$value;}
+@mixin borderRadius($value){border-radius:$value;}
+@mixin color($value){color:$value;}
+@mixin bgColor($value){background-color:$value;}
+@mixin widhtHeight($width,$height){width:$width;height:$height;}
+@mixin width($value){width:$value;}
+@mixin height($height){height:$height;}
+@mixin float($value){ float:$value}
+
+
+
+
+body{
+
+	font-family:$fontFmaily;
+	background:$bgColor;
+
+	button{
+
+		outline:$nooutline;
+	}
+}
+	
+.top{
+	
+		@include width(93%);
+		margin-left: 50px;
+		border-bottom: $bottomBorder;
+		margin-top: 15px;
+
+
+	p{
+		
+		padding-bottom: 0px;
+		@include height(24px);
+		margin-bottom: 15px;
+		@include color(#ffffff);
+
+	}
+
+
+}	
+
+article{
+		
+	.subheader{
+	
+		@include position(absolute);
+		top: 112px;
+		left: 72%;
+
+
+		button{
+		
+		@include width(100px);
+		margin: 0px 13px 0px 0px;
+		@include borderRadius(30px);
+
+		}	
+
+		.clear{dispaly:none;}	
+
+	}	
+
+	.info-text{
+		@include position(absolute);
+		top: 115px;
+		left: 45px;
+
+		h4{
+			
+			font-family:$fontFmaily;
+			@include color(#ffffff);
+
+		}	
+	}
+
+	.main{
+
+		@include border(1px solid #ccc);
+		margin: 35px;
+		margin-top: 110px;
+		@include bgColor(#f7f7f9);
+		@include borderRadius(20px);
+		@include height(700px);
+		margin-bottom: 50px;
+
+
+		h4{
+			
+			@include width(64px);
+			@include position(absolute);
+			left: 210px;
+			border-bottom: $border-bottom;
+			padding-bottom: 5px;
+
+
+
+		}	
+
+		.maincanvas{
+			margin:45px 89px;
+			@include borderRadius(20px);
+			@include border(1px solid #e1e1e8);
+			@include bgColor(#ffffff);
+		}
+
+	}
+
+	 .right-content{
+
+	@include width(280px);
+	@include float(right);
+	@include height(265px);
+	background: rgba(17, 25, 83, 0.75);
+	margin-top: -700px;
+	margin-right: 59px;
+	@include border(1px solid #646262);
+	@include borderRadius(20px);
+
+
+	.heading{
+		@include color(#ffffff);
+		padding-bottom: 3px;
+		margin: 3px 0px 0px 20px;
+		border-bottom:1px solid $color-white;
+		@include width(83%);	
+	}
+
+
+	section{
+
+
+		 #pos{
+
+			@include widhtHeight(140px,1px);
+			@include position(absolute);
+			right: 85px;
+			top: 288px;
+			/*-webkit-transform: rotate(-270deg);
+			-moz-transform: rotate(-270deg);*/
+		}
+
+
+		.speedContent{
+
+		@include color(#ffffff);
+		@include fontSize(13px);
+		padding: 10px;
+		margin-top: 20px;
+	
+		}
+
+		.minContent{
+
+		@include color(#ffffff);
+		margin: -18px 0px 0px 111px;
+		@include fontSize(10px);
+		@include width(0px);
+	
+		}
+
+		.maxContent{
+
+		@include color(#ffffff);
+		@include fontSize(10px);
+		@include width(0px);
+		margin: -14px 0px 0px 245px
+
+		}
+
+		 #size{
+	
+			@include widhtHeight(140px,1px);
+			@include position(absolute);
+			right: 85px;
+			top: 360px;
+			/*-webkit-transform: rotate(-270deg);
+			-moz-transform: rotate(-270deg);*/
+
+		}
+
+
+		.sizeContent{
+
+			@include color(#ffffff);
+			@include fontSize(13px);
+			padding: 10px;
+			margin: 27px 0px 0px 0px;
+		}
+
+		.SizeminContent{
+
+			@include color(#ffffff);
+			margin: -6px 0px 0px 111px;
+			@include fontSize(10px);
+			@include width(0px);
+		
+		}
+
+		.SizemaxContent{
+
+			@include color(#ffffff);
+			@include fontSize(10px);
+			@include width(0px);
+			margin: -14px 0px 0px 245px
+		}
+		.BrightnessContent{
+
+		@include color(#ffffff);
+			@include fontSize(13px);
+			padding: 10px;
+		margin: 18px 0px 0px 0px;
+}
+
+		#brightness{
+
+			@include widhtHeight(140px,1px);
+			@include position(absolute);
+			right: 85px;
+			top: 425px;
+		}
+
+		.BrightminContent{
+			margin: -5px 0px 0px 111px;
+			@include color(#ffffff);
+			@include fontSize(10px);
+			@include width(0px);
+		
+		}
+
+
+		.BrightmaxContent{
+
+			@include color(#ffffff);
+			@include fontSize(10px);
+			@include width(0px);
+			margin: -14px 0px 0px 245px;
+		}
+
+
+
+	} 
+
+
+
+
+
+ }	
+
+}
+
